@@ -1,0 +1,170 @@
+* {
+  font-family: "Mulish";
+  margin: 0;
+  padding: 0;
+}
+main {
+  margin-left: 9%;
+  margin-right: 8%;
+}
+header img {
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+  filter: brightness(55%);
+}
+.description {
+  position: relative;
+  display: flex;
+}
+.lefthead {
+  position: absolute;
+  top: -39%;
+}
+.right {
+  margin-left: 260px;
+}
+.right h3 {
+  font-size: 30px;
+  margin: 10px 0px 20px 20px;
+}
+.right button {
+  border: none;
+  border-radius: 30px;
+  padding: 5px 20px;
+  margin: 0px 0px 10px 20px;
+  color: rgb(161, 161, 161);
+}
+.right button:nth-child(3) {
+  margin: 0px;
+}
+.detail {
+  margin: 10px 0px 0px 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+.detail h4 {
+  color: rgb(161, 161, 161);
+  margin-bottom: 5px;
+}
+.word {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-top: 40px;
+  left: -34%;
+}
+.word h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.word p {
+  line-height: 1.7;
+  color: rgb(161, 161, 161);
+}
+.books h2 {
+  display: inline-block;
+  margin: 30px 0px 30px;
+}
+.info {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 35px;
+}
+.info input {
+  width: 230px;
+  height: 50px;
+  border: none;
+  background-color: rgb(226, 226, 226);
+  padding: 0px 20px;
+  border-radius: 5px;
+}
+.info p {
+  margin-bottom: 12px;
+}
+.books > .info button:nth-child(2) {
+  background-color: rgb(226, 226, 226);
+  width: 250px;
+  height: 50px;
+  border: none;
+  padding: 0px 20px;
+  border-radius: 5px;
+  text-align: left;
+}
+.books > .info button:nth-child(1) {
+  background-color: blue;
+  color: white;
+  width: 129px;
+  height: 50px;
+  border: none;
+  padding: 0px 20px;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 32px;
+}
+.headcinema {
+  display: flex;
+  gap: 30px;
+  margin: 40px 0px;
+}
+.headcinema span {
+  font-size: 14px;
+  color: rgb(161, 161, 161);
+  padding-top: 2px;
+}
+.cinema {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-between;
+  gap: 0px 15px;
+}
+.cinema > div:nth-child(1) {
+  padding: 30px 25px;
+  border: 1px solid;
+  border-radius: 5px;
+}
+.cinema > div:nth-child(2) {
+  padding: 50px 25px;
+  background-color: blue;
+  border-radius: 5px;
+}
+.cinema > div:nth-child(3) {
+  padding: 55px 10px;
+  border: 1px solid;
+  border-radius: 5px;
+}
+.cinema > div:nth-child(4) {
+  padding: 30px 25px;
+  border: 1px solid;
+  border-radius: 5px;
+}
+.buttoncinema {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+.buttoncinema button {
+  padding: 9px 11px;
+  border: 1px solid;
+  background-color: white;
+  border-radius: 5px;
+}
+.buttoncinema button:nth-child(1) {
+  border: 1px solid blue;
+  background-color: blue;
+  color: white;
+  box-shadow: 6px 6px 5px #aaaaaa;
+}
+.booknow {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0px;
+}
+.booknow button {
+  background-color: blue;
+  border: 1px solid blue;
+  color: white;
+  border-radius: 5px;
+  padding: 13px 40px;
+}
