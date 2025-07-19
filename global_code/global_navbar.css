@@ -1,0 +1,56 @@
+.navbar {
+  position: sticky;
+  top: 0px;
+  height: 100px;
+  background-color: white;
+  border-bottom: 1px solid black;
+  z-index: 10;
+}
+.navbar img {
+  position: absolute;
+  margin: 20px 120px;
+}
+.button {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  align-items: end;
+  position: absolute;
+  right: 110px;
+  top: 30px;
+}
+.signin {
+  height: 40px;
+  cursor: pointer;
+  background-color: white;
+  border: 0.5px solid blue;
+  border-radius: 5px;
+  padding: 0px 20px;
+}
+.signin a {
+  text-decoration: none;
+  color: blue;
+}
+.signup a {
+  text-decoration: none;
+  color: white;
+}
+.signup {
+  height: 40px;
+  background-color: blue;
+  cursor: pointer;
+  border: blue;
+  border-radius: 5px;
+  padding: 0px 20px;
+}
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 60px;
+  padding-top: 40px;
+}
+.link-menu {
+  text-decoration: none;
+  color: black;
+}
