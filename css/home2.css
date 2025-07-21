@@ -1,0 +1,143 @@
+* {
+  font-family: "Mulish";
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+main {
+  margin-left: 9%;
+  margin-right: 8%;
+}
+
+header {
+  display: inline;
+}
+header img {
+  filter: brightness(60%);
+}
+header p {
+  font-size: 15px;
+  position: relative;
+  color: white;
+  top: -350px;
+  left: 101px;
+}
+header h1 {
+  font-size: 50px;
+  color: white;
+  position: relative;
+  top: -330px;
+  left: 100px;
+}
+.oval > div:nth-child(1) {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  background-color: white;
+  border-radius: 50%;
+  top: 79%;
+  left: 52%;
+}
+.oval > div:nth-child(2) {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  background-color: white;
+  border-radius: 50%;
+  top: 79%;
+  left: 51%;
+}
+.oval > div:nth-child(3) {
+  position: absolute;
+  width: 45px;
+  height: 7px;
+  background-color: blue;
+  border-radius: 27px;
+  top: 79%;
+  left: 47%;
+}
+.search {
+  position: relative;
+}
+.search p {
+  display: inline-block;
+  margin-bottom: 8px;
+  color: black;
+}
+.search p:nth-child(2) {
+  position: relative;
+  left: 26%;
+}
+.search input[type="text"] {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 20px 0px 20px 60px;
+  width: 25%;
+}
+.search img {
+  position: absolute;
+  top: 47%;
+  left: 20px; /* Sesuaikan posisi horizontal */
+  transform: translateY(-50%);
+  color: #aaa; /* Sesuaikan warna ikon */
+}
+.filter {
+  display: inline;
+  position: relative;
+  top: -50px;
+  left: 33%;
+}
+.filter button {
+  cursor: pointer;
+  background-color: transparent;
+  margin: 0px 23px;
+  width: 80px;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+}
+.filter button:nth-child(1) {
+  background-color: blue;
+  color: white;
+  margin-left: 0px;
+}
+.three_image {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 18px;
+}
+.three_image h1 {
+  margin-top: 10px;
+  font-size: 25px;
+}
+.genre button {
+  padding: 5px 25px;
+  border-radius: 20px;
+  color: rgb(161, 161, 161);
+  border: rgb(161, 161, 161);
+  margin-top: 10px;
+}
+.three_image {
+  margin-bottom: 45px;
+}
+.button_options {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  column-gap: 15px;
+}
+.button_options button {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: none;
+}
+.button_options button:nth-child(1) {
+  color: white;
+  background-color: blue;
+}
+.button_options button:nth-child(5) {
+  color: white;
+  background-color: blue;
+}

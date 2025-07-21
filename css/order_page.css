@@ -1,0 +1,254 @@
+* {
+  font-family: "Mulish";
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #a0a3bd33;
+}
+main {
+  margin-left: 9%;
+  margin-right: 8%;
+  margin-bottom: 8%;
+}
+step {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.Container {
+  border-radius: 8px;
+  width: 400px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.card-step {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0px 20px 20px 20px;
+}
+.circle {
+  position: relative;
+  text-align: center;
+}
+.step {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: white;
+  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+.step.done {
+  background-color: green;
+}
+.step.done .checkmark {
+  font-size: 15px;
+  text-align: center;
+}
+.step.active {
+  background-color: #3366ff; /* Biru */
+}
+.step.panding {
+  background-color: rgb(161, 161, 161);
+}
+.line {
+  width: 50px;
+  border: 1px dashed rgb(161, 161, 161);
+  margin: 0 16px 15px 10px;
+}
+.text {
+  font-size: 13px;
+  color: #333;
+}
+.all {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.right {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  border-radius: 5px;
+  margin-left: 25%;
+  background: white;
+  border: 1px solid white;
+  width: 406px;
+  height: 450px;
+}
+.head_right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.head_right p {
+  font-size: 30px;
+}
+.detail_right {
+  display: flex;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.detail_right p {
+  margin-bottom: 20px;
+}
+.detail_right > div:nth-child(2) {
+  color: black;
+  text-align: end;
+}
+.detail_right > div:nth-child(1) {
+  color: rgb(161, 161, 161);
+}
+.total {
+  display: flex;
+  flex-direction: row;
+  margin: 33px 20px;
+}
+.total p {
+  font-weight: bold;
+  display: flex;
+  align-items: end;
+  margin-left: 185px;
+  color: blue;
+  font-size: 23px;
+}
+.card_right button {
+  background-color: blue;
+  border: 1px solid blue;
+  color: white;
+  width: 73%;
+  height: 50px;
+  margin-top: 45px;
+  border-radius: 5px;
+  margin-left: 26%;
+  font-size: 15px;
+}
+.leftt {
+  border-radius: 5px;
+  background: white;
+  width: 123%;
+  height: 800px;
+}
+.container_leftt {
+  margin: 30px 20px 50px;
+}
+.headcontainer {
+  border: 1px solid;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  padding: 15px;
+}
+.fill {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  margin-left: 15px;
+}
+.fill button {
+  border: none;
+  border-radius: 20px;
+  width: 100px;
+  height: 30px;
+  color: rgb(161, 161, 161);
+}
+.change button {
+  background-color: blue;
+  color: white;
+  border: none;
+  padding: 5px 30px;
+  border-radius: 3px;
+  margin-top: 95px;
+}
+.choose {
+  margin: 0px 20px 50px;
+}
+div span {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+.seat {
+  margin-left: 40px;
+  margin-right: 40px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 40px;
+}
+.one > .seatbutton {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 30px);
+  column-gap: 5px;
+}
+.seatbutton > div {
+  background-color: #d6d8e7;
+  width: 25px;
+  height: 25px;
+  border-radius: 3px;
+}
+.seatbutton span {
+  margin-right: 15px;
+}
+/* Hapus background div yang merupakan 7 kotak terakhir (angka 1-7) */
+.seatbutton div:nth-last-child(-n + 7) {
+  background-color: transparent;
+  text-align: center;
+}
+.two > .seatbutton {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(8, 30px);
+  column-gap: 5px;
+}
+.keydescription {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 40px;
+}
+.key {
+  margin-top: 50px;
+  margin-left: 42px;
+}
+.key h2 {
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+.keydescription h4 {
+  font-weight: normal;
+  margin-left: 45px;
+  color: rgb(161, 161, 161);
+  margin-top: 3px;
+}
+.selected {
+  background-color: blue;
+  width: 25px;
+  height: 25px;
+  border-radius: 3px;
+}
+.love {
+  background-color: #f589d7;
+  width: 25px;
+  height: 25px;
+  border-radius: 3px;
+}
+.sold {
+  background-color: #6e7191;
+  width: 25px;
+  height: 25px;
+  border-radius: 3px;
+}
+.keydescription h3 {
+  font-weight: normal;
+  font-size: 15px;
+  margin-left: 35px;
+  margin-top: -21px;
+  color: rgb(161, 161, 161);
+}

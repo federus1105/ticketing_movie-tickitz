@@ -1,0 +1,154 @@
+* {
+  font-family: "Mulish";
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+main {
+  background-color: #a0a3bd33;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.Container {
+  border-radius: 8px;
+  width: 400px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-step {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0px 20px 20px 20px;
+}
+
+.circle {
+  position: relative;
+  text-align: center;
+}
+
+.step {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: white;
+  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+.step.done {
+  background-color: green;
+}
+
+.step.done .checkmark {
+  font-size: 15px;
+  text-align: center;
+}
+
+.step.active {
+  background-color: #3366ff; /* Biru */
+}
+
+.line {
+  width: 50px;
+  border: 1px dashed rgb(161, 161, 161);
+  margin: 0 16px 15px 10px;
+}
+
+.text {
+  font-size: 13px;
+  color: #333;
+}
+.container-payment {
+  background-color: white;
+  width: 700px;
+  height: 1200px;
+  border: 1px solid white;
+  border-radius: 5px;
+  margin-bottom: 100px;
+}
+.payment-fill {
+  margin: 5%;
+}
+.payment-fill h1 {
+  margin-bottom: 20px;
+}
+.grid {
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  row-gap: 20px;
+}
+.grid h4 {
+  color: rgb(161, 161, 161);
+  font-size: 14px;
+  margin-bottom: 10px;
+  font-weight: normal;
+}
+.grid p {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+.head_grid2 {
+  margin-top: 5%;
+}
+.grid2 p {
+  color: rgb(161, 161, 161);
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+.grid2 {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  row-gap: 20px;
+}
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+  /* padding: 12px 37%; */
+  width: 94%;
+  height: 42px;
+  border-radius: 5px;
+  border: 1px solid;
+  padding-left: 35px;
+  color: rgb(161, 161, 161);
+}
+.head_grid3 h1 {
+  margin-top: -50px;
+}
+.grid3,
+.grid4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 25px;
+}
+.grid3 img,
+.grid4 img {
+  background-size: contain;
+  width: 90px;
+  height: 45px;
+  border: 1px solid rgb(161, 161, 161);
+  border-radius: 5px;
+  padding: 3px 22px;
+  margin-bottom: 30px;
+}
+.buttonplay button {
+  width: 100%;
+  height: 55px;
+  background-color: blue;
+  color: white;
+  border: 1px solid blue;
+  border-radius: 5px;
+  box-shadow: 6px 6px 5px #aaaaaa;
+}
