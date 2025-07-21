@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment Modal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Rancho&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/payment_modal.css" />
+    <link rel="stylesheet" href="/global_code/global_navbar.css" />
+    <link rel="stylesheet" href="/global_code/global_footer.css" />
+  </head>
+  <style>
+    .payment_info {
+      position: absolute;
+      width: 550px;
+      height: 460px;
+      border-radius: 5px;
+      background-color: white;
+      border: 1px solid;
+      margin-left: 34px;
+      box-shadow: 1px 10px 18px #888888;
+    }
+    .fill_payment {
+      margin: 20px 10px;
+    }
+    .fill_payment h3 {
+      text-align: center;
+      font-size: 25px;
+      margin-bottom: 40px;
+    }
+    .fill_data {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+    /* for right */
+    .fill_data > div:nth-child(2) {
+      margin-left: 10px;
+    }
+    .fill_data > div > h3:nth-child(1) {
+      font-size: 17px;
+      display: inline-block;
+    }
+    .fill_data > div > p:nth-child(3) {
+      display: flex;
+      justify-content: end;
+      font-weight: bold;
+      color: blue;
+      font-size: 20px;
+      margin-top: 13px;
+    }
+    .fill_data span {
+      border: 1px solid blue;
+      border-radius: 5px;
+      color: blue;
+      padding: 10px 17px;
+      margin-left: 3px;
+    }
+    /* for left */
+    .fill_data > div > p:nth-child(1) {
+      margin-bottom: 60px;
+    }
+    .fill_data > div:nth-child(1) {
+      color: rgb(161, 161, 161);
+    }
+    .descpay {
+      margin-top: 30px;
+    }
+    .descpay p {
+      color: rgb(161, 161, 161);
+      font-size: 17px;
+    }
+    .descpay span {
+      color: red;
+    }
+    .paybtn {
+      margin-top: 40px;
+      text-align: center;
+    }
+    .paybtn > div:nth-child(1) {
+      background-color: blue;
+      color: white;
+      height: 37px;
+      padding-top: 20px;
+      border-radius: 5px;
+      box-shadow: 1px 10px 18px #888888;
+    }
+    .paybtn > div:nth-child(2) {
+      margin-top: 20px;
+      color: blue;
+      font-weight: bold;
+    }
+  </style>
+  <body>
+    <!--NAVBAR-->
+    <nav class="navbar">
+      <img src="/assets/icons/Tickitz 1.png" />
+      <div class="button">
+        <button class="signin"><a href="#">Signin</a></button>
+        <button class="signup"><a href="#">SignUp</a></button>
+      </div>
+      <div class="menu">
+        <a class="link-menu" href="#">Home</a>
+        <a class="link-menu" href="#">Movie</a>
+        <a class="link-menu" href="#">Buy Ticket</a>
+      </div>
+    </nav>
+    <main>
+      <!--- Step -->
+      <div class="Container">
+        <header class="card-step">
+          <div class="circle">
+            <div class="step done">
+              <img src="/assets/icon payment/Vector.png" alt="" />
+            </div>
+            <div class="text">Dates And Time</div>
+          </div>
+          <div class="line"></div>
+          <div class="circle">
+            <div class="step done">
+              <img src="/assets/icon payment/Vector.png" alt="" />
+            </div>
+            <div class="text">Seat</div>
+          </div>
+          <div class="line"></div>
+          <div class="circle">
+            <div class="step active">3</div>
+            <div class="text">Payment</div>
+          </div>
+        </header>
+      </div>
+
+      <!--Payment Info-->
+      <section>
+        <div class="container-payment">
+          <div class="payment-fill">
+            <div>
+              <h1>Payment Info</h1>
+            </div>
+            <div class="grid">
+              <div>
+                <h4>DATE & TIME</h4>
+                <p>Tuesday, 07 July 2020 at 02:00pm</p>
+                <hr />
+              </div>
+              <div>
+                <h4>MOVIE TITLE</h4>
+                <p>Spider-Man: Homecoming</p>
+                <hr />
+              </div>
+              <div>
+                <!--Payment Info-->
+                <section>
+                  <div class="payment_info">
+                    <div class="fill_payment">
+                      <h3>Payment Info</h3>
+                      <div class="fill_data">
+                        <div>
+                          <p>No. Rekening Virtual</p>
+                          <p>Total Payment</p>
+                        </div>
+                        <div>
+                          <h3>12321328913829724</h3>
+                          <span>Copy</span>
+                          <p>$30</p>
+                        </div>
+                      </div>
+                      <div class="descpay">
+                        <p>
+                          Pay this payment bill before it is due,<span>
+                            on June 23, 2023.</span
+                          >
+                          If the bill has not been paid by the specified time,
+                          it will be forfeited
+                        </p>
+                      </div>
+                      <div class="paybtn">
+                        <div>Check Payment</div>
+                        <div>Pay Later</div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <h4>CINEMA NAME</h4>
+                <p>CineOne21 Cinema</p>
+                <hr />
+              </div>
+              <div>
+                <h4>NUMBER OF TICKETS</h4>
+                <p>3 pieces</p>
+                <hr />
+              </div>
+              <div>
+                <h4>TOTAL PAYMENT</h4>
+                <p style="color: blue" ;>$30,00</p>
+                <hr />
+              </div>
+            </div>
+            <div>
+              <div class="head_grid2">
+                <h1>Personal Information</h1>
+              </div>
+              <div class="grid2">
+                <div>
+                  <p>Full Name</p>
+                  <input
+                    type="text"
+                    name=""
+                    id=""
+                    placeholder="Jonas El Rodriguez"
+                  />
+                </div>
+                <div>
+                  <p>Email</p>
+                  <input
+                    type="email"
+                    name=""
+                    id=""
+                    placeholder="jonasrodri123@gmail.com"
+                  />
+                </div>
+                <div>
+                  <p>Phone Number</p>
+                  <input
+                    type="number"
+                    name=""
+                    id=""
+                    placeholder="+62 | 81445687121"
+                  />
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="head_grid3">
+                <h1>Payment Method</h1>
+              </div>
+              <div class="grid3">
+                <div>
+                  <img src="/assets/icon payment/logos_google-pay.svg" alt="" />
+                </div>
+                <div>
+                  <img src="/assets/icon payment/logos_visa.svg" alt="" />
+                </div>
+                <div>
+                  <img src="/assets/icon payment/gopay.svg" alt="" />
+                </div>
+                <div>
+                  <img src="/assets/icon payment/logos_paypal.svg" alt="" />
+                </div>
+              </div>
+              <div class="grid4">
+                <div>
+                  <img src="/assets/icon payment/dana.svg" alt="" />
+                </div>
+                <div>
+                  <img src="/assets/icon payment/BCA.svg" alt="" />
+                </div>
+                <div>
+                  <img src="/assets/icon payment/bri.svg" alt="" />
+                </div>
+                <div>
+                  <img src="/assets/icon payment/gopay.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <!--Button-->
+            <section>
+              <div class="buttonplay">
+                <button>Play your order</button>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <section class="left">
+        <img src="/assets/icons/Tickitz 1.png" alt="" />
+        <p>
+          Stop waiting in line. Buy tickets<br />
+          conveniently, watch movies quietly.
+        </p>
+      </section>
+      <section class="left2">
+        <h1>Explore</h1>
+        <p>Cinemas</p>
+        <p>My ticket</p>
+        <p>Cinemas</p>
+      </section>
+      <section class="left3">
+        <h1>Our Sponsor</h1>
+        <img src="/assets/icons/ebv.id 2.png" alt="" />
+        <img src="/assets/icons/CineOne21 2.png" alt="" />
+        <img src="/assets/icons/hiflix 2.png" alt="" />
+      </section>
+      <section class="left4">
+        <h1>Follow us</h1>
+        <article>
+          <img src="/assets/icons/eva_facebook-outline.png" alt="" />
+          <p>Tickitz Cinema id</p>
+        </article>
+        <article>
+          <img src="/assets/icons/bx_bxl-instagram.png" alt="" />
+          <p>tickitz.id</p>
+        </article>
+        <article>
+          <img src="/assets/icons/eva_twitter-outline.png" alt="" />
+          <p>tickitzid</p>
+        </article>
+        <article>
+          <img src="/assets/icons/feather_youtube.png" alt="" />
+          <p>tickitzid</p>
+        </article>
+      </section>
+    </footer>
+    <article class="copyright">
+      <p style="text-align: center">© 2020 Tickitz. All Rights Reserved.</p>
+    </article>
+  </body>
+</html>
