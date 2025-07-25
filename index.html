@@ -14,19 +14,25 @@
     <link rel="stylesheet" href="/global_code/global_subcribe.css" />
     <link rel="stylesheet" href="/global_code/global_footer.css" />
     <title>Home</title>
-    <script src="hamburger.js" defer></script>
+    <script src="/js/hamburger.js" defer></script>
+    <script src="/js/local-storage.js" defer></script>
   </head>
   <body>
     <!--NAVBAR-->
+
     <nav class="navbar">
       <img src="/assets/icons/Tickitz 1.png" />
-      <div class="button">
+      <div class="button" id="auth-buttons">
         <button class="signin">
           <a href="sign-in.html">Signin</a>
         </button>
         <button class="signup">
           <a href="sign-up.html">SignUp</a>
         </button>
+      </div>
+      <div class="profile" id="profile">
+        <div class="button" id="logout">logout</div>
+        <img src="/assets/icons/Ellipse 11.svg" alt="" id="profile-image" />
       </div>
       <div class="menu">
         <a class="link-menu" href="index.html">Home</a>
