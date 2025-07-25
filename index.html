@@ -14,19 +14,33 @@
     <link rel="stylesheet" href="/global_code/global_subcribe.css" />
     <link rel="stylesheet" href="/global_code/global_footer.css" />
     <title>Home</title>
+    <script src="/hamburger.js" defer></script>
   </head>
   <body>
     <!--NAVBAR-->
-    <nav class="navbar">
       <img src="/assets/icons/Tickitz 1.png" />
-      <div class="button">
-        <button class="signin"><a href="sign-in.html">Signin</a></button>
-        <button class="signup"><a href="sign-up.html">SignUp</a></button>
+      <div class="button" id="auth-buttons">
+        <button class="signin">
+          <a href="sign-in.html">Signin</a>
+        </button>
+        <button class="signup">
+          <a href="sign-up.html">SignUp</a>
+        </button>
       </div>
       <div class="menu">
         <a class="link-menu" href="index.html">Home</a>
         <a class="link-menu" href="home_2.html">Movie</a>
         <a class="link-menu" href="/code/order_page.html  ">Buy Ticket</a>
+      </div>
+      <div class="hamburger">
+        <img src="/assets/icons/gg_menu-right-alt.png" id="icon" />
+        <div class="menu-hamburger">
+          <a href="index.html">Home</a>
+          <a href="/home_2.html">Movie</a>
+          <a href="">Buy Ticket</a>
+          <a href="/sign-in.html">Signin</a>
+          <a href="/sign-up.html">SignUp</a>
+        </div>
       </div>
     </nav>
     <!--CONTENT 1-->
@@ -219,7 +233,7 @@
       </section>
       <section class="left3">
         <h1>Our Sponsor</h1>
-        <img src="/assets/icons/ebv.id 2.png" alt="" /> 
+        <img src="/assets/icons/ebv.id 2.png" alt="" />
         <img src="/assets/icons/CineOne21 2.png" alt="" />
         <img src="/assets/icons/hiflix 2.png" alt="" />
       </section>
