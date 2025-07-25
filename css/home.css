@@ -24,7 +24,7 @@ main {
   color: rgb(161, 161, 161);
 }
 #hero {
-  display: flex;  
+  display: flex;
   justify-content: space-between;
 }
 .image {
@@ -150,4 +150,106 @@ main {
 }
 .four_headbtn > button:nth-child(1) {
   background-color: gray;
+}
+.hamburger {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .link-menu {
+    display: none;
+  }
+  .button button {
+    display: none;
+  }
+  #hero {
+    display: flex;
+    flex-direction: column;
+  }
+  .head {
+    text-align: center;
+  }
+  .two {
+    text-align: center;
+  }
+  .image {
+    display: grid;
+    justify-content: center;
+    grid-template-areas:
+      "a b"
+      "c b"
+      "c d";
+  }
+  .testi {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+  }
+  .four_headbtn button {
+    display: none;
+  }
+  .four_image,
+  .three_image {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 50px;
+  }
+  section.content5 {
+    height: 350px;
+  }
+  section.content5 h1 {
+    text-align: center;
+    font-weight: normal;
+    font-size: 30px;
+  }
+  section > section {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  footer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr) !important;
+    gap: 50px;
+  }
+  .hamburger {
+    display: block;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    margin-top: -3%;
+    margin-right: -9%;
+  }
+  .menu-hamburger {
+    margin-right: 20%;
+    margin-top: 2.5%;
+    display: flex;
+    gap: 15px;
+  }
+  .menu-hamburger a {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+  }
+  .menu-hamburger {
+    display: none;
+  }
+  .menu-hamburger.active {
+    font-family: "Mulish";
+    display: block;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 1px solid;
+    align-items: center;
+    height: 180px;
+    width: 100%;
+    cursor: pointer;
+  }
 }
