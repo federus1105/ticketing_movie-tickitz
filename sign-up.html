@@ -11,6 +11,7 @@
       rel="stylesheet"
     />
     <link href="sign-up.css" rel="stylesheet" />
+    <script src="/sign-up.js" defer></script>
   </head>
   <body>
     <!--Untuk icon diatas-->
@@ -36,35 +37,43 @@
           <div class="text">Done</div>
         </div>
       </header>
+      <form>
+        <!--- Email -->
+        <section>
+          <label class="em">Email</label>
+          <div class="input">
+            <input type="text" placeholder="Enter your Email" id="email" />
+            <p id="errorem"></p>
+          </div>
+          <label class="em">Password</label>
+          <section>
+            <div class="input">
+              <input
+                type="password"
+                placeholder="Enter your Password"
+                id="password"
+              />
+              <p id="errorpass"></p>
+              <!-- <img src="/assets/icons/eye-solid-full.svg" alt=""  style="width: 20px; height: 20px"> -->
+            </div>
+          </section>
+        </section>
 
-      <!--- Email -->
-      <section>
-        <label class="em">Email</label>
-        <div class="input">
-          <input type="email" placeholder="Enter your Email" />
-        </div>
-        <label class="em">Password</label>
-        <div class="input">
-          <input type="password" placeholder="Enter your Password" />
-        </div>
-      </section>
+        <!--checkbox-->
+        <section class="checkbox">
+          <input type="checkbox" id="checkbox" />
+          <label for="checkbox">I agree to term & conditions</label>
+        </section>
 
-      <!--checkbox-->
-      <section class="checkbox">
-        <input type="checkbox" id="checkbox" />
-        <label for="checkbox">I agree to term & conditions</label>
-      </section>
-
-      <!--Button -->
-      <section>
-        <button class="button">
-          <a href="index.html" style="color: white; text-decoration: none;"> Join for free Now</a>
-        </button>
-      </section>
+        <!--Button -->
+        <section>
+          <button type="submit" class="button">Join for free Now</button>
+        </section>
+      </form>
 
       <!-- Log in-->
       <section>
-        <div class="login">Already have an account? <a href="#">Log in</a></div>
+        <div class="login">Already have an account? <a href="sign-in.html">Log in</a></div>
       </section>
 
       <div class="hr-line"><hr /></div>
