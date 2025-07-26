@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profil Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Rancho&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <style>
+    /* main {
+      margin: 5% 5% 0 9%;
+    } */
+    @media screen and (max-width: 1024) {
+      main {
+        margin: 0;
+      }
+    }
+  </style>
+  <body class="bg-[#dedede] font-[Mulish]">
+    <!--NAVBAR-->
+    <nav
+      id="navbar"
+      class="lg:flex justify-evenly items-center sticky top-0 h-20 bg-white z-10 max-lg:flex max-lg:px-9 max-lg:justify-between "
+    >
+      <div id="navbar_image" class="">
+        <img src="/assets/icons/Tickitz 1.png" />
+      </div>
+      <div id="navbar_menu" class="flex gap-30 max-lg:hidden">
+        <a id="link-menu" href="#">Home</a>
+        <a id="link-menu" href="#">Movie</a>
+        <a id="link-menu" href="#">Buy Ticket</a>
+      </div>
+      <div
+        id="navbar_photo"
+        class="flex items-center justify-end gap-5 w-50 max-lg:hidden"
+      >
+        <div>
+          <p>Location</p>
+        </div>
+        <div>
+          <img src="/assets/icons/dropdown.svg" alt="" />
+        </div>
+        <div>
+          <img src="/assets/icons/bx_bx-search.svg" alt="" />
+        </div>
+        <div>
+          <img src="/assets/icons/Ellipse 11.svg" alt="" />
+        </div>
+      </div>
+      <div class="lg:hidden left-0">
+        <img src="/assets/icons/gg_menu-right-alt.png" alt="" />
+      </div>
+    </nav>
+
+    <main class="mt-17 mr-20 ml-20">
+      <!--Profile-->
+      <div id="content" class="flex gap-8 max-lg:block">
+        <aside id="profil" class="w-60 h-180 rounded-lg bg-white max-lg:w-155 max-lg:mb-5">
+          <div id="container" class="pt-10 pl-8 pr-9 pb-0">
+            <div id="one" class="flex gap-29 mb-8 max-lg:flex justify-between">
+              <p class="text-gray-900">INFO</p>
+              <p class="text-blue-700">•••</p>
+            </div>
+            <div id="two" class="flex flex-col items-center">
+              <div>
+                <img src="/assets/icons/profil_.svg" alt="" />
+              </div>
+              <div>
+                <p class="pb-5 text-[18px]">Jonas El Rodriguez</p>
+                <p class="text-[15px] text-gray-500 text-center">Moviegoers</p>
+              </div>
+              <div
+                id="line"
+                class="my-10 h-0.5 w-61 rounded-sm border-0 bg-neutral-200 max-lg:w-156"
+              ></div>
+            </div>
+            <div id="three" class="flex flex-col">
+              <div>
+                <p class="pb-5 text-gray-900 ">Loyalty Points</p>
+              </div>
+              <div
+                id="card"
+                class="h-27 bg-blue-700 rounded-md text-white border-blue-500 relative"
+              >
+                <div class="pt-2 pl-3">Moviegoers</div>
+                <div>
+                  <img
+                    src="/assets/icons/eva_star-fill.svg"
+                    alt=""
+                    class="z-3 top-0 -right-1 absolute"
+                  />
+                </div>
+                <div class="pl-3 pt-10">320 <span>points</span></div>
+                <div
+                  id="oval"
+                  class="absolute w-25 h-25 rounded-full ml-26 -mt-34 bg-white/30 mb-40 max-lg:ml-121"
+                ></div>
+                <div
+                  id="oval2"
+                  class="absolute w-24 h-24 rounded-full ml-28 -mt-28 bg-white/30 max-lg:ml-123"
+                ></div>
+              </div>
+            </div>
+            <div
+              id="four"
+              class="flex flex-col items-center justify-center pt-5"
+            >
+              <div class="text-[13px] pb-3 max-lg:text-[16px]">
+                <p>180 points become a master</p>
+              </div>
+              <button class="bg-slate-400 w-49 h-6 rounded-3xl"></button>
+              <button
+                class="bg-blue-700 absolute w-28 h-6 rounded-3xl mt-8 mr-21 max-lg:mt-9"
+              ></button>
+            </div>
+          </div>
+        </aside>
+
+        <!--Step-->
+        <section>
+          <div id="setting" class="w-210 h-16 bg-white rounded-lg max-lg:w-155">
+            <div class="flex text-[18px] gap-10 py-[19px] px-[50px] max-lg:justify-around">
+              <a
+                href="/code/profil_page.html"
+                class="h-11.5 border-b-3 border-blue-700"
+                >Account Settings</a
+              >
+              <a href="/code/order_history.html" class="text-gray-500"
+                >Order History</a
+              >
+            </div>
+          </div>
+          <!--Details Information-->
+          <section>
+            <div id="details" class="mt-10 w-210 h-90 bg-white rounded-lg max-lg:w-155">
+              <div id="fild_details" class="p-8 pt-10">
+                <div>
+                  <p class="text-lg pb-2.5">Details Information</p>
+                  <hr />
+                </div>
+                <div id="data" class="pt-5 grid grid-cols-2">
+                  <div>
+                    <p class="pt-4 pb-3">Firstname</p>
+                    <input
+                      type="text"
+                      name=""
+                      id=""
+                      placeholder="Jonas"
+                      class="h-11 w-85 border-1 rounded-lg placeholder:p-7 text-lg max-lg:w-65"
+                    />
+                  </div>
+                  <div>
+                    <p class="pt-4 pb-3">Last Name</p>
+                    <input
+                      type="text"
+                      name=""
+                      id=""
+                      placeholder="El Rodriguez"
+                      class="h-11 w-85 border-1 rounded-lg placeholder:p-7 text-lg max-lg:w-65"
+                    />
+                  </div>
+                  <div>
+                    <p class="pt-4 pb-3">E-mail</p>
+                    <input
+                      type="text"
+                      name=""
+                      id=""
+                      placeholder="jonasrodrigu123@gmail.com"
+                      class="h-11 w-85 border-1 rounded-lg placeholder:p-7 text-lg max-lg:w-65 max-lg:text-base"
+                    />
+                  </div>
+                  <div>
+                    <p class="pt-4 pb-3">Phone Number</p>
+                    <input
+                      type="text"
+                      name=""
+                      id=""
+                      placeholder="+62 | 81445687121"
+                      class="h-11 w-85 border-1 rounded-lg placeholder:p-7 text-lg max-lg:w-65"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!--Account and privacy-->
+          <section>
+            <div id="privacy" class="mt-7 w-210 h-57 bg-white rounded-lg mb-8 max-lg:w-155">
+              <div id="fild_privacy" class="py-6 px-8">
+                <div>
+                  <p class="pb-4">Account and Privacy</p>
+                  <hr />
+                </div>
+                <div id="data_account" class="pt-8 grid grid-cols-2">
+                  <div>
+                    <p class="pb-3">New Password</p>
+                    <input
+                      type="text"
+                      placeholder="Write your password"
+                      class="border-1 rounded-lg w-85 h-11 placeholder:p-6 max-lg:w-65"
+                    />
+                  </div>
+                  <div>
+                    <p class="pb-3">Confirm Password</p>
+                    <input
+                      type="text"
+                      placeholder="Confirm your password"
+                      class="border-1 rounded-lg w-85 h-11 placeholder:p-6 max-lg:w-65"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <div
+            id="btn_updates"
+            class="mb-20 bg-blue-700 rounded-lg h-10 w-75 text-center text-white pt-2"
+          >
+            Update Changes
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
