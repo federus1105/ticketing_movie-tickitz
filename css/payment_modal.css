@@ -8,12 +8,25 @@ body {
   padding: 0;
 }
 main {
+  position: relative;
   background-color: #a0a3bd33;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
+ .belakang{
+  content: "";
+  top: 0;
+  right: 0;
+  left: 0; 
+  bottom: 0;
+  background-color: #333333cb;
+  backdrop-filter: blur(2px);
+  position: absolute;
+  z-index: 1;
+  display: none;
+} 
 .Container {
   border-radius: 8px;
   width: 400px;
@@ -57,8 +70,8 @@ main {
   text-align: center;
 }
 
-.step.active {
-  background-color: #3366ff; /* Biru */
+.step.aktif {
+  background-color: #3366ff; 
 }
 
 .line {
@@ -151,4 +164,88 @@ input[type="number"] {
   border: 1px solid blue;
   border-radius: 5px;
   box-shadow: 6px 6px 5px #aaaaaa;
+  cursor: pointer;
+}
+
+.payment_info {
+  z-index: 2;
+  position: absolute;
+  width: 550px;
+  height: 460px;
+  border-radius: 5px;
+  background-color: white;
+  margin-left: 34px;
+  display: none;
+}
+.active{
+  display: block;
+}
+.fill_payment {
+  margin: 20px 10px;
+}
+.fill_payment h3 {
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 40px;
+}
+.fill_data {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+/* for right */
+.fill_data > div:nth-child(2) {
+  margin-left: 10px;
+}
+.fill_data > div > h3:nth-child(1) {
+  font-size: 17px;
+  display: inline-block;
+}
+.fill_data > div > p:nth-child(3) {
+  display: flex;
+  justify-content: end;
+  font-weight: bold;
+  color: blue;
+  font-size: 20px;
+  margin-top: 13px;
+}
+.fill_data span {
+  border: 1px solid blue;
+  border-radius: 5px;
+  color: blue;
+  padding: 10px 17px;
+  margin-left: 3px;
+}
+/* for left */
+.fill_data > div > p:nth-child(1) {
+  margin-bottom: 60px;
+}
+.fill_data > div:nth-child(1) {
+  color: rgb(161, 161, 161);
+}
+.descpay {
+  margin-top: 30px;
+}
+.descpay p {
+  color: rgb(161, 161, 161);
+  font-size: 17px;
+}
+.descpay span {
+  color: red;
+}
+.paybtn {
+  margin-top: 40px;
+  text-align: center;
+}
+.paybtn > div:nth-child(1) {
+  background-color: blue;
+  color: white;
+  height: 37px;
+  padding-top: 20px;
+  border-radius: 5px;
+  box-shadow: 1px 10px 18px #888888;
+}
+.paybtn > div:nth-child(2) {
+  margin-top: 20px;
+  color: blue;
+  font-weight: bold;
 }
