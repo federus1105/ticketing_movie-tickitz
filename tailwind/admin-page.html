@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Rancho&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="/js/admin-page.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="font-[Mulish]">
+    <nav>
+      <div
+        id="navbar"
+        class="border-b-1 flex justify-between pr-6 pl-6 pt-5 pb-5 mb-10 lg:flex lg:justify-around lg:items-center"
+      >
+        <img src="/tailwind/asset/Tickitz 2.png" alt="" class="lg:hidden" />
+        <img src="/tailwind/asset/gg_menu-right-alt.png" alt="" class="lg:hidden">
+        <div id="navbar_image" class="max-lg:hidden">
+          <img src="/assets/icons/Tickitz 1.png" />
+        </div>
+        <div id="navbar_menu" class="flex gap-15 max-lg:hidden">
+          <a id="link-menu" href="#">Dahsboard</a>
+          <a id="link-menu" href="#">Movie</a>
+        </div>
+        <div
+          id="navbar_photo"
+          class="flex items-center justify-end gap-5 w-50 max-lg:hidden"
+        >
+          <div>
+            <p>Location</p>
+          </div>
+          <div>
+            <img src="/assets/icons/dropdown.svg" alt="" />
+          </div>
+          <div>
+            <img src="/assets/icons/bx_bx-search.svg" alt="" />
+          </div>
+          <div>
+            <img src="/assets/icons/Ellipse 11.svg" alt="" />
+          </div>
+    </nav>
+    <!--Content-->
+    <main class="flex items-center flex-col">
+      <div id="sales-chart" class="border-1 w-93 h-150 rounded-xl mb-15 lg:w-260 lg:h-200">
+        <div id="fild" class="pl-6 pr-6 pt-9 text-xl lg:text-xs">
+          <p class="font-bold lg:text-xl">Sales Chart</p>
+          <select
+            name="my-selection"
+            id="select-one"
+            class="w-80 h-13 rounded-lg pl-3 bg-slate-100 mt-7 lg:w-49 lg:h-11"
+          >
+            <option value="Avengers">Avengers</option>
+            <option value="Batman">Batman</option>
+            <option value="Superman">Superman</option>
+          </select>
+          <select
+            name="my-selection"
+            id="my-dropdown"
+            class="w-80 h-13 rounded-lg pl-3 bg-slate-100 mt-7 lg:w-49 lg:ml-1 lg:h-11"
+          >
+            <option value="option1">option
+            </option>
+            <option value="option2">Option 2 Text</option>
+            <option value="option3">Option 3 Text</option>
+          </select>
+          <button id="filter" class="w-80 bg-blue-700 mt-7 rounded-md h-12 text-white lg:w-35 ml-3 lg:h-10 lg:cursor-pointer">
+            Filter
+          </button>
+          <p id="heading" class="mt-10 mb-6 lg:text-xl">Avengers: End Game</p>
+          <section class="border-1">
+            <canvas id="grafik"></canvas>
+          </section>
+        </div>
+      </div>
+      <!--Ticket Sales-->
+      <div id="ticket-sales" class="border-1 w-93 h-150 rounded-xl mb-15 lg:w-260 lg:h-200">
+        <div id="fild" class="pl-6 pr-6 pt-9 text-xl lg:text-xs">
+          <p class="font-bold lg:text-xl">Ticket Sales</p>
+          <select
+            name="my-selection"
+            id="select2"
+            class="w-80 h-13 rounded-lg pl-3 bg-slate-100 mt-7 lg:w-49 lg:h-11"
+          >
+            <option value="CaptainAmerika">Captain Amerika</option>
+            <option value="Hulk">Hulk</option>
+            <option value="Thor">Thor</option>
+          </select>
+          <select
+            name="my-selection"
+            id="my-dropdown"
+            class="w-80 h-13 rounded-lg pl-3 bg-slate-100 mt-7 lg:w-49 lg:h-11"
+          >
+            <option value="option1">Location</option>
+            <option value="option2">Option 2 Text</option>
+            <option value="option3">Option 3 Text</option>
+          </select>
+          <button id="filter2" class="w-80 bg-blue-700 mt-7 rounded-md h-12 text-white lg:w-35 ml-3 lg:h-10">
+            Filter
+          </button>
+          <p id="heading2" class="mt-10 mb-6 lg:text-xl cursor-pointer">Captain Amerika</p>
+          <section class="border-1">
+            <canvas id="grafik-ticket"></canvas>
+          </section>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
