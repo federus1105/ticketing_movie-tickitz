@@ -7,11 +7,10 @@ main {
   margin-left: 9%;
   margin-right: 8%;
 }
-header img {
-  background-attachment: fixed;
-  background-size: cover;
-  width: 100%;
-  filter: brightness(55%);
+header {
+  height: 300px;
+  position: relative;
+  border-radius: 12px;
 }
 .description {
   position: relative;
@@ -20,6 +19,9 @@ header img {
 .lefthead {
   position: absolute;
   top: -39%;
+}
+.lefthead img {
+  width: 270px;
 }
 .right {
   margin-left: 260px;
@@ -58,10 +60,12 @@ header img {
 .word h2 {
   font-size: 20px;
   margin-bottom: 10px;
+  padding-left: 30px;
 }
 .word p {
   line-height: 1.7;
   color: rgb(161, 161, 161);
+  padding-left: 30px;
 }
 .books h2 {
   display: inline-block;
