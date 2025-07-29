@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+  <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tickitz Login</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -11,13 +11,13 @@
       rel="stylesheet"
     />
     <link href="/sign-in.css" rel="stylesheet" />
+    <script src="/js/signin.js" defer></script>
   </head>
   <body>
     <!--Untuk icon diatas-->
     <div class="img">
       <img src="assets/icons/69ffcf42e23fbaa4462b7dee6db277d1b110ca93.png" />
     </div>
-
     <!--- Step -->
     <main class="Container">
       <header>
@@ -29,26 +29,29 @@
 
       <!--- Email -->
       <section>
+        <form>
         <label class="em">Email</label>
         <div class="input">
-          <input type="email" placeholder="Enter your Email" />
+          <input type="email" placeholder="Enter your Email" id="email"/>
         </div>
         <label class="em">Password</label>
         <div class="input">
-          <input type="password" placeholder="Enter your Password" />
+          <input type="password" placeholder="Enter your Password" id="password"/>
         </div>
       </section>
 
       <section>
+        <a href="sign-up.html" class="forget">Register</a>
         <a href="#" class="forget">Forgot your Password?</a>
       </section>
 
       <!--Button -->
       <section>
-        <button class="button">
-          <a href="index.html" style="color: white; text-decoration: none;">Join for free Now</a>
+        <button type="submit" class="button">
+         Join for free Now
         </button>
       </section>
+        </form>
 
       <div class="hr-line"><hr /></div>
 
