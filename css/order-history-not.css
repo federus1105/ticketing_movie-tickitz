@@ -34,7 +34,7 @@ body {
 }
 .content {
   display: flex;
-  gap: 40px;
+  gap: 20px;
 }
 .profil {
   width: 260px;
@@ -43,7 +43,7 @@ body {
   border-radius: 10px;
   background-color: white;
   margin-top: 20%;
-  margin-left: 170px;
+  margin-left: 90px;
 }
 .container {
   margin: 30px 25px 0px;
@@ -159,7 +159,7 @@ button {
   border: none;
 }
 .setting {
-  margin-top: 11%;
+  margin-top: 8%;
   width: 850px;
   height: 65px;
   border: 1px solid white;

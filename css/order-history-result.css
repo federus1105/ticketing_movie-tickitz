@@ -34,7 +34,7 @@ body {
 }
 .content {
   display: flex;
-  gap: 40px;
+  gap: 20px;
 }
 .profil {
   width: 260px;
@@ -43,7 +43,7 @@ body {
   border-radius: 10px;
   background-color: white;
   margin-top: 20%;
-  margin-left: 170px;
+  margin-left: 90px;
 }
 .container {
   margin: 30px 25px 0px;
@@ -159,7 +159,7 @@ button {
   border: none;
 }
 .setting {
-  margin-top: 11%;
+  margin-top: 8%;
   width: 850px;
   height: 65px;
   border: 1px solid white;
@@ -187,7 +187,7 @@ button {
 .schedule-one {
   margin-top: 5%;
   width: 850px;
-  height: 590px;
+  height: 270px;
   border: 1px solid white;
   border-radius: 15px;
   background-color: white;
@@ -242,10 +242,11 @@ button {
 .schedule-two {
   margin-top: 3%;
   width: 850px;
-  height: 260px;
+  height: 500px;
   border: 1px solid white;
   border-radius: 15px;
   background-color: white;
+  margin-bottom: 5%;
 }
 .detail-schedule-two {
   display: grid;
@@ -308,10 +309,10 @@ button {
   row-gap: 50px;
   margin-bottom: 40px;
 }
-.information > p:nth-child(3){
-color: rgb(161, 161, 161);
-font-size: 18px;
-margin-bottom: 40px;
+.information > p:nth-child(3) {
+  color: rgb(161, 161, 161);
+  font-size: 18px;
+  margin-bottom: 40px;
 }
 .information > p > span {
   color: #e82c2c;
@@ -339,4 +340,44 @@ margin-bottom: 40px;
 .fild-information > p:nth-child(2) {
   font-weight: bold;
   text-align: end;
+}
+.fildqr {
+  margin-top: 30px;
+  margin-left: 35px;
+}
+.top {
+  display: flex;
+  flex-direction: row;
+  margin-left: 26%;
+  margin-top: -160px;
+  gap: 30px;
+}
+
+.top p {
+  margin-bottom: 10px;
+}
+.lower {
+  display: flex;
+  flex-direction: row;
+  margin-left: 26%;
+  margin-top: 20px;
+  gap: 30px;
+}
+.lower p {
+    margin-bottom: 10px;
+}
+.fildqr h4 {
+    color: rgb(161, 161, 161);
+    font-weight: normal;
+}
+.total {
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: center;
+    margin-left: 37%;
+    margin-top: -85px;
+}
+.total h2 {
+    margin-top: 10px;
 }

@@ -151,11 +151,32 @@ main {
 .four_headbtn > button:nth-child(1) {
   background-color: gray;
 }
-.hamburger {
+.hamburger {  
   display: none;
 }
-
+.profile img {
+  position: relative;
+  right:  0;
+  cursor: pointer;
+}
+#logout {
+  border: 1px solid blue;
+  padding: 10px;
+  right: 8.5%;
+  top: 80%;
+  background-color: blue;
+  cursor: pointer;
+  color: white;
+  border-radius: 5px;
+  display: none;
+}
+#logout.active {
+  display: block;
+}
 @media screen and (max-width: 768px) {
+  #logout {
+    right: 15%;
+  }
   .link-menu {
     display: none;
   }
